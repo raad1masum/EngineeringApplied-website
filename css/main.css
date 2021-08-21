@@ -138,9 +138,18 @@ nav {
   overflow: none;
   display: flex;
   justify-content: center;
+  background-image: url("/img/jumbotron.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .jumbotron img {
   height: 100%;
   z-index: -9999999;
+}
+
+.jumbotron-content {
+  background-color: var(--blue);
+  width: 970px;
+  height: 246px;
 }
