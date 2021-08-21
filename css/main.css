@@ -149,12 +149,27 @@ nav {
   z-index: -9999999;
 }
 
-.jumbotron-content {
+.jumbotron-content-div {
   background-color: var(--blue);
   width: 970px;
   height: 246px;
   border-radius: 40px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+}
+
+.jumbotron-content h1 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 75px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.jumbotron-content p {
+  color: var(--gold);
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
 }
