@@ -50,14 +50,6 @@ nav {
   animation: rotateback 0.5s cubic-bezier(0.24, 0.59, 0.58, 1);
 }
 
-.navbar-logo p {
-  display: inline;
-  float: right;
-  color: var(--foreground);
-  font-size: 2rem;
-  margin: 1.5rem 0.3rem;
-}
-
 .navbar {
   display: inline-block;
   margin-right: 40px;
@@ -82,7 +74,8 @@ nav {
 
 .navlink {
   position: relative;
-  color: var(--accent);
+  color: var(--blue);
+  font-weight: 600;
 }
 
 .navlink:before {
