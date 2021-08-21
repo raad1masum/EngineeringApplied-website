@@ -24,10 +24,6 @@ nav {
   justify-content: space-between;
 }
 
-.nav-shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
 .nav-mobile-shadow {
   box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -47,7 +43,6 @@ nav {
   width: 100px;
   margin: 0;
   float: left;
-  animation: rotateback 0.5s cubic-bezier(0.24, 0.59, 0.58, 1);
 }
 
 .navbar {
@@ -126,7 +121,7 @@ nav {
 }
 
 .navbar-mobile ul li a {
-  color: var(--foreground);
+  color: var(--white);
   transition: 0.3s;
 }
 
