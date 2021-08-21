@@ -175,7 +175,7 @@ nav {
 }
 
 .mission {
-  height: 625px;
+  height: 650px;
   display: flex;
   justify-content: center;
 }
@@ -201,4 +201,14 @@ nav {
 
 .mission-content-image img {
   transform: translateX(-17px);
+}
+
+.mission-content-paragraph {
+  width: 900px;
+  transform: translate(50px, -390px);
+}
+
+.mission-content-paragraph p {
+  color: var(--white);
+  font-size: 31px;
 }
