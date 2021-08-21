@@ -2,12 +2,141 @@
 
 :root {
   --white: #ffffff;
-  --blue: #0A2749;
-  --gold: #CC922F;
+  --blue: #0a2749;
+  --gold: #cc922f;
 }
 
 html,
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+}
+
+nav {
+  z-index: 9999999999999999999999999999999999999999999999999999999;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 115px;
+  padding: 10px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.nav-mobile-shadow {
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar-logo-div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.navbar-logo img {
+  display: inline;
+  width: 100px;
+  margin: 0;
+  float: left;
+  animation: rotateback 0.5s cubic-bezier(0.24, 0.59, 0.58, 1);
+}
+
+.navbar-logo p {
+  display: inline;
+  float: right;
+  color: var(--foreground);
+  font-size: 2rem;
+  margin: 1.5rem 0.3rem;
+}
+
+.navbar {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  font-size: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navlink {
+  position: relative;
+  color: var(--accent);
+}
+
+.navlink:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--blue);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navlink:hover:before {
+  color: var(--blue);
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navbar-mobile {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  background-color: var(--background);
+}
+
+.navbar-mobile ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+}
+
+.navbar-mobile li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  font-size: 2rem;
+}
+
+.navbar-mobile ul li a {
+  color: var(--foreground);
+  transition: 0.3s;
+}
+
+.navbar-mobile ul li a:hover {
+  color: var(--blue);
+  transition: 0.3s;
 }
