@@ -193,3 +193,12 @@ nav {
   text-decoration-color: var(--gold);
   text-underline-offset: 15px;
 }
+
+.mission-content-image {
+  display: flex;
+  justify-content: center;
+}
+
+.mission-content-image img {
+  transform: translateX(-17px);
+}
