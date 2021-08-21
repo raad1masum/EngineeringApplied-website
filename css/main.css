@@ -183,3 +183,13 @@ nav {
 .mission-content {
   width: 970px;
 }
+
+.mission-content h1 {
+  text-align: center;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 60px;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 15px;
+}
