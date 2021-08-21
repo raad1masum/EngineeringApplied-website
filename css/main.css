@@ -154,4 +154,7 @@ nav {
   width: 970px;
   height: 246px;
   border-radius: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
